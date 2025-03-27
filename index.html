@@ -194,7 +194,7 @@ class GeminiPictionaryHome extends StatelessWidget {
   const GeminiPictionaryHome({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
 
     return Scaffold(
       body: const Center(
@@ -276,7 +276,7 @@ appBar: AppBar(
 </ul>
 <p>With that in place, proceed now and add the scaffold / placeholder widget name inside our <strong>GeminiPictionaryHome</strong> widget, as the first child of its <strong>Column</strong> widget (remove the comment saying ```painting surface goes here``)` and add <strong>PaintingSurface</strong>, as such:</p>
 <pre><code language="language-dart" class="language-dart">// inside the GeminiPictionaryHome&#39;s Column children...
-PaintingSurface();
+PaintingSurface(),
 
 </code></pre>
 <p>Go ahead now and create a <strong>ConsumerStatefulWidget</strong> widget that fleshes out the <strong>PaintingSurface</strong> widget. We&#39;re making it as a <strong>ConsumerStatefulWidget</strong> since it will be a <strong>StatefulWidget</strong> with consuming capabilities so as to retrieve state management dependencies via its provided <strong>Ref</strong> reference:</p>
